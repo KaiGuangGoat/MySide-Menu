@@ -24,7 +24,7 @@ public class SideMenuView extends ViewGroup{
 	
 	private int childHeight;
 	private int childWidth;
-	private int mHeight;//��ͼ�ĸ߶�
+	private int mHeight;//视图的高度
 	
 	private boolean showSideMenu = true;
 	private Handler handler;
@@ -144,7 +144,7 @@ public class SideMenuView extends ViewGroup{
 	private float lastY;
 	private float lastX;
 	private long downTimeStamp;
-	private int scrollYLast;//��һ���ƶ�ƫ�Ƶ���
+	private int scrollYLast;//上一次移动偏移的量
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		
@@ -160,11 +160,11 @@ public class SideMenuView extends ViewGroup{
 				return false;
 			}
 			int deltaY = (int) (lastY - event.getY());
-			if(deltaY>0){//���ϻ���
+			if(deltaY>0){//向上滑动
 				if(getScrollY() >= mHeight - getHeight()){
 					break;
 				}
-			}else{//���»���
+			}else{///向下滑动
 				if(getScrollY() <= 0){ 
 					break;
 				}
