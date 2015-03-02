@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeeeee"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeState"
+        android:text="change" />
+
+    <FrameLayout
+        android:id="@+id/ly_side_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#eeeeeeee" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.sidemenu_test.widget.SideMenuView
+            android:id="@+id/side_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/side_menu_select_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_down"
+                android:text="电影" />
+
+            <Button
+                android:id="@+id/side_menu_select_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_up"
+                android:text="音乐" />
+
+            <Button
+                android:id="@+id/side_menu_select_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_down" />
+
+            <Button
+                android:id="@+id/side_menu_select_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_up" />
+
+            <Button
+                android:id="@+id/side_menu_select_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_down" />
+
+            <Button
+                android:id="@+id/side_menu_select_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_up" />
+
+            <Button
+                android:id="@+id/side_menu_select_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_down" />
+            
+            <Button
+                android:id="@+id/side_menu_select_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_up" />
+            
+            <Button
+                android:id="@+id/side_menu_select_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_down" />
+            
+            <Button
+                android:id="@+id/side_menu_select_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_up" />
+        </com.example.sidemenu_test.widget.SideMenuView>
+    </FrameLayout>
+
+</LinearLayout>
